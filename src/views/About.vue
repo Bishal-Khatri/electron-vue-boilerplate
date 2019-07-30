@@ -1,5 +1,7 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+      <b-row>
+        <b-col md="12">About Page</b-col>
+      </b-row>
   </div>
 </template>

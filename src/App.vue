@@ -1,31 +1,27 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <b-nav tabs align="center">
+            <b-nav-item :active="getActiveRoute('login')"><b-link to="/login">Login</b-link></b-nav-item>
+            <b-nav-item :active="getActiveRoute('home')"><b-link to="/">Home</b-link></b-nav-item>
+            <b-nav-item :active="getActiveRoute('about')"><b-link to="/about">About</b-link></b-nav-item>
+        </b-nav>
+        <b-container class="mt-4">
+            <router-view/>
+        </b-container>
     </div>
-    <router-view/>
-  </div>
 </template>
 
+<script>
+    export default {
+        methods:{
+            getActiveRoute(path){
+                if (path==this.$route.name){
+                    return true
+                }
+            }
+        }
+    }
+</script>
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>

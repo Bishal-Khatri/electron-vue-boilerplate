@@ -1,14 +1,14 @@
 <template>
-  <div class="home">
-     <b-alert variant="success" show>Home Page</b-alert>
-  </div>
+    <div class="home">
+        <b-row>
+            <b-col md="12">Home Page</b-col>
+        </b-row>
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
-  name: 'home',
-}
+    export default {
+        name: 'home',
+    }
 </script>
