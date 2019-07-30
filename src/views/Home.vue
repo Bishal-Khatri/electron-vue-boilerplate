@@ -1,14 +1,11 @@
 <template>
-    <div class="home">
-        <b-row>
-            <b-col md="12">Home Page</b-col>
-        </b-row>
-    </div>
+  <p>This is home page</p>
 </template>
 
 <script>
 
-    export default {
-        name: 'home',
-    }
+export default {
+  components: {
+  },
+};
 </script>
