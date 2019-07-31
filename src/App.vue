@@ -81,7 +81,7 @@
     },
     data () {
       return {
-        auth:false,
+        auth:true,
         drawer: true,
         group: null,
         items: [
